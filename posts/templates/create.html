@@ -1,0 +1,9 @@
+<!--자동으로 구조를 만들어줌->ModerlForm이 편한 이유~
+세부적으로 수정하려면 forms.py를 수정하면 됨
+action을 안넣으면 제자리로 돌아옴.(create)-->
+<form action="" method='post'>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit"/>
+</form>
+
